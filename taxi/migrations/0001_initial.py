@@ -164,14 +164,14 @@ class Migration(migrations.Migration):
                 (
                     "drivers",
                     models.ManyToManyField(
-                        related_name="cars", to=settings.AUTH_USER_MODEL
+                        related_name="car_list.html", to=settings.AUTH_USER_MODEL
                     ),
                 ),
                 (
                     "manufacturer",
                     models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                        related_name="cars",
+                        related_name="car_list.html",
                         to="taxi.manufacturer",
                     ),
                 ),
